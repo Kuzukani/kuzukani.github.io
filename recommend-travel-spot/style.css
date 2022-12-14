@@ -1,0 +1,199 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.header_container{
+    background-color: #C097FF;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 2px 3px rgba(59, 61, 63, 0.653);
+}
+.header{
+    width:1000px;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#4D3A4D;
+    
+}
+.header .logo{
+    padding-top:5px;
+    padding-left:5px;
+    max-width:65px;
+    height:100%;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .menu ul{
+    list-style-type: none;
+    padding:0px;
+    margin: 0px;
+}
+.header .menu ul li{
+    display: inline-block;
+} 
+.header .menu ul li a{
+    color:#4D3A4D;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    padding:17.5px 2.5px;
+}
+.header .menu ul li a:hover{
+    color:white;
+}
+.header .menu ul li a:last-child{
+    padding-right:10px;
+}
+.body_container{
+    display: flex;
+    justify-content: center;
+}
+.body{
+    max-width:1000px;
+    display: flex;
+    align-items: center;
+}
+.text,.img_holder{
+    width:50%;
+}
+.text{
+    text-align: center;
+    font-size: 2em;
+}
+.img_holder{
+    padding:50px 0px;
+}
+.img_holder img{
+    width:100%;
+}
+
+.carousel_container{
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    width:1200px;
+}
+
+.carousel {
+    background: #EEE;
+    margin-bottom: 30px;
+  }
+
+.carousel-cell {
+    width: 66%;
+    height: 300px;
+    margin-right: 10px;
+    background: #C097FF;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    position: relative;
+}
+.carousel-cell picture source,.carousel-cell picture img{
+    width: 100%;
+    height: 100%;
+}
+/* cell number */
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 300px;
+    font-size: 80px;
+    color: white;
+} */
+  
+@media only screen and (max-width: 800px){
+    .body{
+        display: block;
+    }
+    .text,.img_holder{
+        width:100%;
+        padding:20px;
+        font-size: 1.5em;
+    }
+    .img_holder{
+        padding:0px;
+    }
+    .carousel-cell{
+        height: 250px;
+    }
+    .carousel-cell:before{
+        line-height: 250px;
+    }
+}
+
+.readmore{
+    width:100px;
+    height:40px;
+    position: absolute;
+    background-color: #4D3A4D;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.readmore a{
+    display: block;
+    width:100%;
+    height:100%;
+    color: #C097FF;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+.readmore a:hover{
+    /* color:#FFB9E3; */
+    color: white;
+}
+.content{
+    max-width:800px;
+}
+.img_center{
+    display: flex;
+    justify-content: center;
+}
+.img_center img{
+    width: 100%;
+}
+.content .banner{
+    padding:5px;
+}
+.content h2{
+    text-align: center;
+    color:#4D3A4D;
+}
+.content p{
+    color:#4D3A4D;
+}
+.content img{
+    width: 100%;
+    padding:5px;
+}
+.info{
+    text-indent: 30px;
+}
+.content a{
+    text-decoration: none;
+    color: #4D3A4D;
+}
+.auimg{
+    max-width: 500px;
+    margin:10px;
+}
+.auimg img{
+    width: 100%;
+}
+.author p{
+    text-align: center;
+}
+.author:last-child{
+    margin-bottom: 10px;
+}
